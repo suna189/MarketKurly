@@ -25,49 +25,7 @@
 <!--//popup-->
 <hr />
 <!--header-->
-<header>
-    <!--로고-->
-    <h1><a href="#">MARKET Kurly</a></h1>
-    <!--샛별배송/택배배송-->
-    <a href="#"></a>
-    <!--탑메뉴-->
-    <dl class="topMenu">
-        <dt class="blind">탑메뉴</dt>
-        <dd><a href="#">회원가입</a></dd>
-        <dd><a href="#">로그인</a></dd>
-        <dd>
-            <a href="#">고객센터</a>
-            <ul>
-                <li><a href="#">공지사항</a></li>
-                <li><a href="#">자주하는 질문</a></li>
-                <li><a href="#">1:1 문의</a></li>
-                <li><a href="#">상품 제안</a></li>
-                <li><a href="#">에코포장 피드백</a></li>
-            </ul>
-        </dd>
-        <dd><a href="#">배송지역 검색</a></dd>
-    </dl>
-    <!--주메뉴-->
-    <nav>
-        <ul class="gnb">
-            <li><a href="#">전체 카테고리</a></li>
-            <li><a href="#">신상품</a></li>
-            <li><a href="#">베스트</a></li>
-            <li><a href="#">알뜰쇼핑</a></li>
-            <li><a href="#">이벤트</a></li>
-        </ul>
-    </nav>
-    <!--검색 및 장바구니-->
-    <form action="/">
-        <fieldset>
-            <legend>검색하기</legend>
-            <label for="srch" class="blind">검색어 입력</label>
-            <input type="search" id="srch">
-            <button type="image" src="img/icon_search.png" class="btn_srch"></button>
-        </fieldset>
-    </form>
-    <button type="image" src="img/icon_cart.png" class="btn_cart"></button>
-</header>
+<%@ include file="header.jsp" %>
 <!--//header-->
 <hr />
 <!--container-->
@@ -184,7 +142,7 @@
                                 <input type="checkbox"><label for="">SMS</label>
                                 <input type="checkbox"><label for="">이메일</label>
                                 <div class="sms_info">
-                                    <img src="img/img_event.png" alt="동의 시 한 달간 [5%적립]과 [무료배송] (첫 구매 후 1주일 내 적용)">
+                                    <img src="resources/form/img/img_event.png" alt="동의 시 한 달간 [5%적립]과 [무료배송] (첫 구매 후 1주일 내 적용)">
                                 </div>
                             </div>
                         </li>
@@ -201,7 +159,7 @@
     </div>
     <aside>
         <div>
-            <img src="img/img_quick.png" alt="샛별/택배 배송안내">
+            <img src="resources/form/img/img_quick.png" alt="샛별/택배 배송안내">
         </div>
         <nav>
             <ul>
@@ -215,82 +173,7 @@
 <!--//container-->
 <hr />
 <!--footer-->
-<footer>
-    <div class="footer_cc">
-        <h4>고객행복센터</h4>
-        <ul>
-            <li>
-                <p>1644-1107</p>
-                <dl>
-                    <dt>365고객센터</dt>
-                    <dd>오전 7시 - 오후 7시</dd>
-                </dl>
-            </li>
-            <li>
-                <p><a href="#">카카오톡 문의</a></p>
-                <dl>
-                    <dt>365고객센터</dt>
-                    <dd>오전 7시 - 오후 7시</dd>
-                </dl>
-            </li>
-            <li>
-                <p><a href="#">1:1 문의</a></p>
-                <dl>
-                    <dt>24시간 접수 가능</dt>
-                    <dd>고객센터 운영시간에 순차적으로 답변해드리겠습니다.</dd>
-                </dl>
-            </li>
-        </ul>
-    </div>
-    <div class="footer_company">
-        <ul>
-            <li><a href="#">컬리소개</a></li>
-            <li><a href="#">컬리소개영싱</a></li>
-            <li><a href="#">인재채용</a></li>
-            <li><a href="#">이용약관</a></li>
-            <li><a href="#"><strong>개인정보처리방침</strong></a></li>
-            <li><a href="#">이용안내</a></li>
-        </ul>
-        
-        <ul>
-            <li><p>법인명 (상호): 주식회사 컬리 | 사업자 등록번호 : 261-81-23567 <a href="#">사업자정보확인</a></p></li>
-            <li>통신판매업 : 제 2018-서울강남-01646호 | 개인정보보호책임자 : 이원준</li>
-            <li>주소 : 서울시 도산대로 16길 20, 이래빌딩 B1 ~ 4F | 대표이사 :김슬아</li>
-            <li>입점문의 : <a href="#">입점문의하기</a> | 제휴문의 : <a href="#">business@kurlycorp.com</a></li>
-            <li>채용문의 : <a href="#">recruit@kurlycorp.com</a></li>
-            <li>팩스 : 070-7500-6098 | 이메일 : <a href="#">help@kurlycorp.com</a></li>
-        </ul>
-        
-        <p class="copy">&copy; KURLY CORP. ALL RIGHTS RESERVED</p>
-        
-        <ul class="sns">
-            <li><a href="#">마켓컬리 인스타그램 바로가기</a></li>
-            <li><a href="#">마켓컬리 페이스북 바로가기</a></li>
-            <li><a href="#">마켓컬리 블로그 바로가기</a></li>
-            <li><a href="#">마켓컬리 네이버 포스트 바로가기</a></li>
-            <li><a href="#">마켓컬리 유튜브 바로가기</a></li>
-        </ul>
-    </div>
-    <div class="footer_award">
-        <ul>
-            <li>
-                <a href="#"><img src="img/logo_isms.png" alt="isms 로고"></a>
-                <p>[인증범위]마켓컬리 쇼핑몰 서비스 개발 - 운영<br />
-                [유효기간]2019.04.01 ~ 2022.03.31</p>
-            </li>
-            <li>
-                <a href="#"><img src="img/logo_eprivacyplus.png" alt="epribacy plus 로고"></a>
-                <p>개인정보보호 우수 웹사이트 &middot;<br />
-                개인정보처리시스템 인증(ePRIBACY PLUS)</p>
-            </li>
-            <li>
-                <a href="#"><img src="img/logo_lguplus.png" alt="LG U+ 로고"></a>
-                <p>고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한<br />
-                LG U+ 구매안전(에스크로) 서비스를 이용하실 수 있습니다.</p>
-            </li>
-        </ul>
-    </div>
-</footer>
+<%@ include file="footer.jsp" %>
 <!--//footer-->
 </body>
 </html>
